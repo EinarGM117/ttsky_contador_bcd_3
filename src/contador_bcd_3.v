@@ -1,4 +1,4 @@
-module tt_um_contador_bcd_3 (
+module contador_bcd_3 (
     input  wire [7:0] ui_in,
     output wire [7:0] uo_out,
     input  wire [7:0] uio_in,
@@ -110,3 +110,4 @@ module tt_um_contador_bcd_3 (
 
 
 endmodule
+
