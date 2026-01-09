@@ -1,4 +1,4 @@
-module contador_bcd_3 (
+module contador_bcd_3(
     input  wire [7:0] ui_in,
     output wire [7:0] uo_out,
     input  wire [7:0] uio_in,
@@ -13,7 +13,7 @@ module contador_bcd_3 (
     assign uio_out[7:4] = 4'h0;
     assign uo_out[7] = 1'b0;
 
-    localparam FREQ_BASE = 50_000_000;
+    localparam FREQ_BASE = 100_000_000;
     localparam MAX_TICK  = FREQ_BASE / 4; 
 
     reg [31:0] prescaler;
@@ -110,4 +110,5 @@ module contador_bcd_3 (
 
 
 endmodule
+
 
