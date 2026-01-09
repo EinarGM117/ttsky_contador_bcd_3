@@ -6,7 +6,7 @@ from cocotb.clock import Clock
 from cocotb.triggers import ClockCycles
 
 @cocotb.test()
-async def test_project(dut):
+async def test_contadro_bcd_3(dut):
     clock = Clock(dut.clk, 100, unit="ns")
     cocotb.start_soon(clock.start())
 
